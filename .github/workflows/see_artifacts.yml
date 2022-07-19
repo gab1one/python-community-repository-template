@@ -1,0 +1,19 @@
+name: See artifacts
+
+on: [push, workflow_dispatch]
+
+jobs:
+  build-linux:
+    runs-on: ubuntu-latest
+
+    steps:
+    - run: echo '${{ steps.result.outputs.artifacts }}'
+#     - uses: actions/checkout@v3
+#    - name: Set up Python 3.10
+#      uses: actions/setup-python@v3
+#      with:
+#        python-version: "3.10"
+#    - name: Add conda to system path
+#      run: |
+
+
